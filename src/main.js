@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import Axios from './plugins/axios'
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.config.globalProperties.$axios = Axios;
+
+app.mount('#app');

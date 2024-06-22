@@ -1,19 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <UserManagement></UserManagement>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import UserManagement from './components/UserManagement.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    UserManagement
   }
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
